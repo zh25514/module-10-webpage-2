@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">    <!-- Link to stylesheet "style.css" -->
+</head>
+<body>
+    <h2>Descendent Selector</h2>
+    <div class="d">     <!-- Div.d element: Descendent Selector -->
+        <ol>            <!-- ol element -->
+            <li>This is an li</li>
+            <li>Every descendent of the ol element</li>     <!-- Bunch of li elements -->
+            <li>is selected and highlighted</li>
+        </ol>
+        <p>This p element is not a descendent of the ol element, so it should not be stylized</p>   <!-- p element not a descendent of the ol tag -->
+    </div>
+    <br>
+    <h2>Child Selector</h2>
+    <div class="c">     <!-- Div.c element: Child Selector -->
+        <p>This is a child of the div.c element</p>     <!-- p elements -->
+        <section>   <!-- This section tag is a child of the div.c class, but not the p tag within the section tag -->
+            <p>This is not a child of the div.c element, it should not be stylized</p>
+        </section>
+        <p>This is annother child element</p>
+    </div>
+    <br>
+    <div class="a">     <!-- Div.a element: Adjacent Sibling Selector -->
+        <h2>Adjacent Sibling Selector</h2>
+        <p>This is a child of the div.a element</p>
+        <p>This is a sibling of the above p element</p>     <!-- All the p tags are siblings of each other, but only the first p tag is selected -->
+        <p>Only the first p element directly following the h1 element is stylized</p>
+    </div>
+    <br>
+    <div class="g">     <!-- Div.g element: General Sibling Selector -->
+        <h2>General Sibling Selector</h2>
+        <p>This is a child of the div.g element</p>
+        <p>This is a sibling of the above p element</p>     <!-- All the p tags are siblings of each other, so they should all be selected -->
+        <p>All p element following the h1 element are stylized</p>
+    </div>
+</body>
+</html>

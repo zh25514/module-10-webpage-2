@@ -1,0 +1,19 @@
+/* Descendent Selector */
+.d ol li {                          /* Selects all descendents of the div.d and ol elements of the tag li */
+    background-color: yellow;     /* Sets the background-color to yellow */
+}
+
+/* Child Selector */
+.c > p {                /* Selects all the child p elements of the div.c element */
+    font-weight: bold;  /* Sets the font-weight to bold */
+}
+
+/* Adjacent Sibling Selector */
+.a > h2 + p {       /* Selects only the first p element that directly follows the h2 element within the div.a element */
+    color: red;   /* Sets the color of the text to red */
+}
+
+/* General Sibling Selector */
+.g > h2 ~ p {       /* Selects every p element that follows an h2 element within the div.g element */
+    color: blue;  /* Sets the color of the text to blue */
+}
